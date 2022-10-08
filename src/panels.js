@@ -20,7 +20,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/596f27f769904f0ab6305a900a5633fc_1664252834~tplv-dmt-logom:tos-useast5-i-0068-tx/c4d8cadfba46417793bcfa2ef88c4d7b.image?x-expires=1665208800&x-signature=e4cPjbMWAuJCVLf0PwSol4y8EXM%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -60,7 +60,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/610dd8aa227f4a018b911c551fe6ee5e_1664254863~tplv-dmt-logom:tos-useast5-i-0068-tx/3cc0eadcd4084cdab40670bdf0404ed2.image?x-expires=1665208800&x-signature=8EyrWxO0GO24KK5EmJcG6V92XR0%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -96,7 +96,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/db18f25030d74aea97eb12a54f750f79_1664256528~tplv-dmt-logom:tos-useast5-i-0068-tx/243d836218784b459314d2fc3023fc73.image?x-expires=1665208800&x-signature=JRJA%2Fbm306jATJuZmZeFI%2BySz3E%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -148,7 +148,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/6a21eedb1fba4dafaf992201c050e7b4_1664310780~tplv-dmt-logom:tos-useast5-i-0068-tx/0666da16737e4782b2b6b89bbfe00c7c.image?x-expires=1665208800&x-signature=sBRJCcTuTi%2FQ9NFnB0U4%2BBCNVUw%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>When you create a new variable, you give it a value.</p>
@@ -206,7 +206,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ba11ebb2d6ae4dec9b2c318bc7e0bc91_1664332026~tplv-dmt-logom:tos-useast5-i-0068-tx/068777ee57f74e9885e067959a74036b.image?x-expires=1665208800&x-signature=lL5vkKcp4yr1gzf%2FaDDDwe0YNio%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -268,7 +268,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/162daf710c3b409fb4214f2e4ce91305_1664336746~tplv-dmt-logom:tos-useast5-i-0068-tx/fd33b74959d34f1da75e30d018d24204.image?x-expires=1665208800&x-signature=5eqa83uy7tLVJVB7%2B6WoQwyCmGc%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -314,7 +314,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p19-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ac6b4db60b654c84877081a85b285b1f_1665017420~tplv-dmt-logom:tos-useast5-i-0068-tx/8152d63040ec4acf8f185cff0905517a.image?x-expires=1665208800&x-signature=SPrPoJn1R3WBkepE53IpJC7dXpA%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>Use this to get the value of two or more numbers.</p>
@@ -367,7 +367,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/afd32efb216e482b90f08fe5d422823c_1665020763~tplv-dmt-logom:tos-useast5-i-0068-tx/1730f6bf37524862b47a013245797f57.image?x-expires=1665208800&x-signature=LS6a86ytrDAOP9zLZBeFftEhgLQ%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>Tells your code what math to do first.</p>
@@ -399,7 +399,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/74cab6809a894b0aa1aa15cb8734e755_1665026788~tplv-dmt-logom:tos-useast5-i-0068-tx/eb28852bb06a41349f51a35025c29262.image?x-expires=1665208800&x-signature=TtVQJ7aZ0BQ5qLBHiEmheNZxRBY%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>A quick way to add or subtract a number by one.</p>
@@ -434,7 +434,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/259a74412f454b1c8d98e514c9cafc83_1665033783~tplv-dmt-logom:tos-useast5-i-0068-tx/77e2712e01a74c7e8959de394485830d.image?x-expires=1665208800&x-signature=eWpnLuDdB7bZbnpLJy0K6%2BxRh4s%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>
@@ -482,7 +482,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/e769967f37384096a564102167e5393a_1665082014~tplv-dmt-logom:tos-useast5-i-0068-tx/e2f32a4a60264e3ba9a990e15db044c1.image?x-expires=1665208800&x-signature=hL7lFac4Glo1slYYo1tds9B05zg%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>Use this when you wanna test if something is true or false.</p>
@@ -530,7 +530,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					imageSrc='https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/1af14d9384754bbfaf75da79f13e6091_1665086094~tplv-dmt-logom:tos-useast5-i-0068-tx/87b9c95a5f874a50ad05e20014bdfa56.image?x-expires=1665208800&x-signature=CieS%2F0l7XFR4pBhGpgA9W9LHCZE%3D'
+					imageSrc=''
 					explanation={
 						<div>
 							<p>Use this when you wanna test if something is true or false.</p>
