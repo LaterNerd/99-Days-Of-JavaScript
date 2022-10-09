@@ -524,17 +524,26 @@ const panels = [
 					vidSrc={`${tiktokEmbed}7151265482761407786`}
 					explanation={
 						<div>
-							<p>
-								A quick way to give a variable a new value. Addition: +=
-								Subtraction: -= 1. Write variable name 2. Add += or -= 3. Write
-								the new value you want to add or subtract from the variable.
-							</p>
+							<p>A quick way to give a variable a new value.</p>
+							<br></br>
 							<p>
 								<strong>2 Common Types: </strong>
 								<ul>
 									<li>Addition: +=</li>
 									<li>Subtraction: -=</li>
 								</ul>
+							</p>
+							<br></br>
+							<p>
+								<strong>Steps:</strong>
+								<ol>
+									<li>1. Write variable name </li>
+									<li>2. Add += or -=</li>
+									<li>
+										3. Write the new value you want to add or subtract from the
+										variable.
+									</li>
+								</ol>
 							</p>
 						</div>
 					}
