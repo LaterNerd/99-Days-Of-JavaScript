@@ -20,7 +20,7 @@ function App() {
 				<Header as={'h4'} textAlign='center'>
 					<a
 						style={{
-							color: '#159fd2',
+							color: '#47385f',
 						}}
 						href={'https://www.tiktok.com/@mario.zamora'}
 						target={'_blank'}
