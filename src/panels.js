@@ -13,7 +13,7 @@ const PanelInfo = ({ vidSrc, explanation, example }) => (
 		) : null}
 		{example ? (
 			<>
-				<Header as={'h3'}>Let's use it:</Header>
+				<Header as={'h3'}>How do you use it?</Header>
 				<Message>{example}</Message>
 			</>
 		) : null}
@@ -677,6 +677,317 @@ const panels = [
 							<p>5 &#62;= 8; // false</p>
 							<p>5 &#62;= 3; // false</p>
 							<p>5 &#62;= 5; // true</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'IF Statements',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7153025707411541290`}
+					explanation={
+						<div>
+							<p>Lets you do things only if something's true.</p>
+							<br></br>
+							<p>
+								<strong>To use it, ask:</strong>
+							</p>
+							<ul>
+								<li>What do you want to happen?</li>
+								<li>When do you want it to happen?</li>
+							</ul>
+						</div>
+					}
+					example={
+						<div>
+							<p>let mealsEaten = 0;</p>
+							<p>let ateBreakfast = false;</p>
+							<br></br>
+							<p>
+								// <strong>if this is trues</strong>
+							</p>
+							<p>if (mealsEaten === 0) &#123;</p>
+							<p>
+								// <strong>make this happen</strong>
+							</p>
+							<p>// update breakfast</p>
+							<p>ateBreakfast = true;</p>
+							<p>// increment mealsEaten by one</p>
+							<p>mealsEaten++;</p>
+							<p>&#125;</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'IF / ELSE Statements',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7153057077319994666`}
+					explanation={
+						<div>
+							<p>Lets you do things only if something's true.</p>
+							<p>And do something else if it's false.</p>
+							<br></br>
+							<p>
+								<strong>To use it, ask:</strong>
+							</p>
+							<ul>
+								<li>What do you want to happen?</li>
+								<li>When do you want it to happen?</li>
+								<li>What happens if it's false?</li>
+							</ul>
+						</div>
+					}
+					example={
+						<div>
+							<p>let day = 'Monday';</p>
+							<p>let emotion;</p>
+							<br></br>
+							<p>
+								// <strong>if this is true</strong>
+							</p>
+							<p>if (day === 'Monday') &#123;</p>
+							<p>
+								// <strong>make this happen</strong>
+							</p>
+							<p>emotion = '🥳';</p>
+							<p>&#125; else &#123;</p>
+							<p>emotion = '🥲';</p>
+							<p>&#125;</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'ELSE IF Statements',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7153113451362110763`}
+					explanation={
+						<div>
+							<p>
+								Use it when an if statement is false but something else is true.
+							</p>
+							<br></br>
+							<p>
+								<strong>To use it, ask:</strong>
+							</p>
+							<ul>
+								<li>What do you want to happen?</li>
+								<li>When do you want it to happen?</li>
+								<li>What happens if something else's true?</li>
+							</ul>
+
+							<br></br>
+							<hr />
+							<p>
+								<strong>Notes: </strong> An "else if" statement goes between and
+								if and else.
+							</p>
+						</div>
+					}
+					example={
+						<div>
+							<p>let day = 'Tuesday';</p>
+							<p>let emotion;</p>
+							<br></br>
+							<p>
+								// <strong>if this is true</strong>
+							</p>
+							<p>if (day === 'Monday') &#123;</p>
+							<p>
+								// <strong>do this</strong>
+							</p>
+							<p>emotion = '🥳';</p>
+							<p>
+								// <strong>or if this is true</strong>
+							</p>
+							<p>&#125; else if (day === 'Tuesday') &#123;</p>
+							// <strong>do this</strong>
+							<p>emotion = '😝';</p>
+							// <strong>otherwise</strong>
+							<p>&#125; else &#123;</p>
+							// <strong>do this</strong>
+							<p>emotion = '🥲';</p>
+							<p>&#125;</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'Logical AND',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7153764533641776426`}
+					explanation={
+						<div>
+							<p>
+								Use it when two or more things need to be true for something to
+								happen.
+							</p>
+							<hr />
+							<p>
+								<strong>Notes: </strong> Used in if / else parentheses
+							</p>
+						</div>
+					}
+					example={
+						<div>
+							<p>let title = 'Mr.';</p>
+							<p>let fullName = 'Potato Head';</p>
+							<p>let greeting;</p>
+							<br></br>
+							<p>
+								// <strong>will not run</strong>
+							</p>
+							<p>
+								// <strong>if both conditions are true</strong>
+							</p>
+							<p>if (title === 'Mrs.' && fullName === 'Potato Head') &#123;</p>
+							<p>
+								// <strong>do this</strong>
+							</p>
+							<p>greeting = 'Hello, Mrs. Potato Head';</p>
+							<p>&#125;</p>
+							<br></br>
+							<p>let title = 'Mrs.';</p>
+							<p>let fullName = 'Potato Head';</p>
+							<p>let greeting;</p>
+							<br></br>
+							<p>
+								// <strong>will run</strong>
+							</p>
+							<p>
+								// <strong>if both conditions are true</strong>
+							</p>
+							<p>if (title === 'Mrs.' && fullName === 'Potato Head') &#123;</p>
+							<p>
+								// <strong>do this</strong>
+							</p>
+							<p>greeting = 'Hello, Mrs. Potato Head';</p>
+							<p>&#125;</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'Logical OR',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7153751879040781614`}
+					explanation={
+						<div>
+							<p>Use it when two or more things can make something happen.</p>
+							<hr />
+							<p>
+								<strong>Notes: </strong> Used in if / else parentheses
+							</p>
+						</div>
+					}
+					example={
+						<div>
+							<p>let day = 'Monday';</p>
+							<p>let emotion;</p>
+							<br></br>
+							<p>
+								// <strong>if either condition is true</strong>
+							</p>
+							<p>if (day === 'Monday' || day === 'Friday') &#123;</p>
+							<p>
+								// <strong>do this</strong>
+							</p>
+							<p>emotion = '🥳';</p>
+							<p>&#125; else &#123;</p>
+							<p>
+								// <strong>do this</strong>
+							</p>
+							<p>emotion = '🫣';</p>
+							<p>&#125;</p>
+						</div>
+					}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'Function Declaration',
+		content: {
+			content: (
+				<PanelInfo
+					vidSrc={`${tiktokEmbed}7154171722831367470`}
+					explanation={
+						<div>
+							<p>What's something you do all the time?</p>
+							<p>
+								A function takes that one job and breaks it down into little
+								steps.
+							</p>
+							<p>So that it can repeat those steps and finish the job.</p>
+							<p>It's kind of like having your own robot.</p>
+							<p>You tell it what you want, and then it does the job.</p>
+						</div>
+					}
+					example={
+						<div>
+							<p>
+								//{' '}
+								<strong>
+									Functions: takes one job and breaks it down into little steps
+								</strong>
+							</p>
+							<p>
+								<strong>// and then gives you an answer</strong>
+							</p>
+							<br></br>
+							<p>function name(params) &#123;</p>
+							<p>// take in variables</p>
+							<p>// do some steps</p>
+							<p>// sends back an answer</p>
+							<p>return;</p>
+							<p>&#125;</p>
+							<br></br>
+							<p>
+								// <strong>Add two numbers</strong>
+							</p>
+							<p>function add(numOne, numTwo) &#123;</p>
+							<p>
+								// <strong>take in values</strong>
+							</p>
+							<br></br>
+							<p>
+								// <strong>steps:</strong>
+							</p>
+							<p>// add two numbers together</p>
+							<p>let add = numOne + numTwo;</p>
+							<br></br>
+							<p>
+								// <strong>result:</strong> two numbers added together
+							</p>
+							<p>return add;</p>
+							<p>&#125;</p>
 						</div>
 					}
 				/>
