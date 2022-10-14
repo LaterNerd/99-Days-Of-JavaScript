@@ -9,16 +9,24 @@ function App() {
 			<Segment
 				style={{
 					marginTop: '2rem',
-					backgroundColor: '#eacae0',
+					backgroundColor: '#eda6c3',
 					border: '0.2rem solid #47385f',
-					boxShadow: '6.1px 7.2px #40ad33',
+					boxShadow: '6.1px 7.2px #239b7f',
 				}}
 			>
 				<Header as={'h1'} textAlign='center'>
 					#99DaysofJavaScript
 				</Header>
 				<Header as={'h4'} textAlign='center'>
-					by Later Nerd ✌️
+					<a
+						style={{
+							color: '#159fd2',
+						}}
+						href={'https://www.tiktok.com/@mario.zamora'}
+						target={'_blank'}
+					>
+						by Later Nerd ✌️
+					</a>
 				</Header>
 			</Segment>
 
