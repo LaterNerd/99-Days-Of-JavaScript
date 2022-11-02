@@ -2,7 +2,7 @@ import { Divider, Embed, Header } from 'semantic-ui-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const PanelInfo = ({ vidSrc, explanation, example }) => (
+const PanelInfo = ({ vidSrc, explanation, codeSnippet }) => (
 	<div>
 		<Embed style={{ height: '750px' }} active url={vidSrc} />
 		<Divider hidden />
@@ -13,16 +13,22 @@ const PanelInfo = ({ vidSrc, explanation, example }) => (
 				<Divider hidden />
 			</>
 		) : null}
-		{example ? (
+		{codeSnippet ? (
 			<>
 				<Header as={'h3'}>How do you use it?</Header>
-				<>{example}</>
+				<SyntaxHighlighter
+					// wrapLongLines
+					children={codeSnippet}
+					showLineNumbers
+					language='javascript'
+					style={coldarkDark}
+				/>
 			</>
 		) : null}
 	</div>
 );
 
-const tiktokEmbed = 'https://www.tiktok.com/embed/v2/';
+const tiktokEmbedLink = 'https://www.tiktok.com/embed/v2/';
 
 const panels = [
 	{
@@ -31,9 +37,9 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7147784853138935086`}
+					vidSrc={`${tiktokEmbedLink}7147784853138935086`}
 					explanation={null}
-					example={null}
+					codeSnippet={null}
 				/>
 			),
 		},
@@ -44,7 +50,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7147911443403246891`}
+					vidSrc={`${tiktokEmbedLink}7147911443403246891`}
 					explanation={
 						<div>
 							<p>
@@ -59,21 +65,10 @@ const panels = [
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// 'let' keyword is in bold</p>
-							<br></br>
-							<p>
-								<strong>let</strong> count;
-							</p>
-							<p>
-								<strong>let</strong> login;
-							</p>
-							<p>
-								<strong>let</strong> pet;
-							</p>
-						</div>
-					}
+					codeSnippet={`// 'let' keyword is in bold
+let count;
+let login;
+let pet;`}
 				/>
 			),
 		},
@@ -84,7 +79,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7147920146705747243`}
+					vidSrc={`${tiktokEmbedLink}7147920146705747243`}
 					explanation={
 						<div>
 							<p>
@@ -95,21 +90,10 @@ const panels = [
 							<p>To use "const," put it in front of a new variable name.</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// 'const' keyword is in bold</p>
-							<br></br>
-							<p>
-								<strong>const</strong> password;
-							</p>
-							<p>
-								<strong>const</strong> firstName;
-							</p>
-							<p>
-								<strong>const</strong> lastName;
-							</p>
-						</div>
-					}
+					codeSnippet={`// 'const' keyword is in bold
+const password;
+const firstName;
+const lastName;`}
 				/>
 			),
 		},
@@ -120,7 +104,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7147927267623177518`}
+					vidSrc={`${tiktokEmbedLink}7147927267623177518`}
 					explanation={
 						<div>
 							<p>
@@ -147,21 +131,10 @@ const panels = [
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// variable name is in bold</p>
-							<br></br>
-							<p>
-								let <strong>likes</strong>;
-							</p>
-							<p>
-								let <strong>age</strong>;
-							</p>
-							<p>
-								let <strong>favoriteEmoji</strong>;
-							</p>
-						</div>
-					}
+					codeSnippet={`// variable name is in white
+let likes;
+let age;
+let favoriteEmoji;`}
 				/>
 			),
 		},
@@ -172,7 +145,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148160337571892526`}
+					vidSrc={`${tiktokEmbedLink}7148160337571892526`}
 					explanation={
 						<div>
 							<p>When you create a new variable, you give it a value.</p>
@@ -192,34 +165,20 @@ const panels = [
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>
-								// <strong>string:</strong> any kind of text
-							</p>
-							<p>let favoritePhrase = 'ciao mama 😘';</p>
-							<br></br>
-							<p>
-								// <strong>number:</strong> any number
-							</p>
-							<p>let luckyNumber = 22;</p>
-							<br></br>
-							<p>
-								// <strong>boolean:</strong> true or false
-							</p>
-							<p>let tall = false;</p>
-							<br></br>
-							<p>
-								// <strong>null:</strong> no value
-							</p>
-							<p>let address = null;</p>
-							<br></br>
-							<p>
-								// <strong>undefined:</strong> no value set
-							</p>
-							<p>let password;</p>
-						</div>
-					}
+					codeSnippet={`// string: any kind of text
+let favoritePhrase = 'ciao mama 😘';
+					
+// number: any number
+let luckyNumber = 22;
+					
+// boolean: true or false
+let tall = false;
+					
+// null: no value
+let address = null;
+					
+// undefined: no value set
+let password;`}
 				/>
 			),
 		},
@@ -230,7 +189,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148251584324209966`}
+					vidSrc={`${tiktokEmbedLink}7148251584324209966`}
 					explanation={
 						<div>
 							<p>
@@ -240,48 +199,37 @@ const panels = [
 							<p>To do that, you use an array.</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// individual menu items</p>
-							<p>let menuItemOne = 'hamburger';</p>
-							<p>let menuItemTwo = 'cheese burger';</p>
-							<p>let menuItemThree = 'double double';</p>
-							<p>let menuItemFour = 'fries';</p>
-							<p>let menuItemFive = 'shake';</p>
-							<br></br>
-							<p>
-								// <strong>Array: grouped menu items</strong>
-							</p>
-							<p>
-								let menuItems = [ 'hamburger', 'cheese burger', 'double double',
-								'fries', 'shake', ];
-							</p>
-							<br></br>
-							<p>// individual lucky numbers</p>
-							<p>let luckyNumberOne = 80;</p>
-							<p>let luckyNumberTwo = 08;</p>
-							<p>let luckyNumberThree = 73;</p>
-							<p>let luckyNumberFour = 55;</p>
-							<p>let luckyNumberFive = 0;</p>
-							<br></br>
-							<p>
-								// <strong>Array: grouped lucky numbers</strong>
-							</p>
-							<p>let luckyNumbers = [80, 08, 73, 55, 0];</p>
-							<br></br>
-							<p>// individual test answers</p>
-							<p>let testAnswerOne = true;</p>
-							<p>let testAnswerTwo = false;</p>
-							<p>let testAnswerThree = true;</p>
-							<p>let testAnswerFour = false;</p>
-							<p>let testAnswerFive = true;</p>
-							<br></br>
-							<p>
-								// <strong>Array: grouped test answers</strong>
-							</p>
-							<p>let testAnswers = [true, false, true, false, true];</p>
-						</div>
-					}
+					codeSnippet={`// individual menu items
+let menuItemOne = 'hamburger';
+let menuItemTwo = 'cheese burger';
+let menuItemThree = 'double double';
+let menuItemFour = 'fries';
+let menuItemFive = 'shake';
+					
+// Array: grouped menu items
+let menuItems = [ 'hamburger', 'cheese burger', 'double double', 'fries', 'shake'];
+					
+					
+// individual lucky numbers
+let luckyNumberOne = 80;
+let luckyNumberTwo = 08;
+let luckyNumberThree = 73;
+let luckyNumberFour = 55;
+let luckyNumberFive = 0;
+					
+// Array: grouped lucky numbers
+let luckyNumbers = [80, 08, 73, 55, 0];
+					
+					
+// individual test answers
+let testAnswerOne = true;
+let testAnswerTwo = false;
+let testAnswerThree = true;
+let testAnswerFour = false;
+let testAnswerFive = true;
+					
+// Array: grouped test answers
+let testAnswers = [true, false, true, false, true];`}
 				/>
 			),
 		},
@@ -292,7 +240,7 @@ const panels = [
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148271817965178154`}
+					vidSrc={`${tiktokEmbedLink}7148271817965178154`}
 					explanation={
 						<div>
 							<p>
@@ -302,22 +250,15 @@ const panels = [
 							<p>To do that, you use an object.</p>
 						</div>
 					}
-					example={
-						<>
-							<SyntaxHighlighter
-								showLineNumbers
-								language='javascript'
-								style={coldarkDark}
-							>
-								{`// my user profile as variables
+					codeSnippet={`// my user profile as variables
 let username = 'mario.zamora';
 let bio = 'Software Engineer 🤓';
 let website = 'laternerd.com';
 let likes = 19.8;
 let videos = 388;
 let verified = false;
-
-
+					
+					
 // my user profile as an object
 let myProfile = {
 	username: 'mario.zamora',
@@ -329,9 +270,6 @@ let myProfile = {
 	followers: 2571,
 	verified: false
 };`}
-							</SyntaxHighlighter>
-						</>
-					}
 				/>
 			),
 		},
@@ -342,16 +280,13 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148586546302766382`}
+					vidSrc={`${tiktokEmbedLink}7148586546302766382`}
 					explanation={null}
-					example={
-						<div>
-							<p>let temperature = 76;</p>
-							<p>temperature = 74;</p>
-							<p>temperature = 72;</p>
-							<p>temperature = 67;</p>
-						</div>
-					}
+					codeSnippet={`let temperature = 76;
+
+temperature = 74;
+temperature = 72;
+temperature = 67;`}
 				/>
 			),
 		},
@@ -362,29 +297,26 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148623993590009134`}
+					vidSrc={`${tiktokEmbedLink}7148623993590009134`}
 					explanation={null}
-					example={
-						<div>
-							<p>// my user profile object</p>
-							<p>let myProfile = &#123;</p>
-							<p> username: 'mario.zamora',</p>
-							<p> bio: 'Software Engineer 🤓',</p>
-							<p> website: 'laternerd.com',</p>
-							<p>followers: 2571,</p>
-							<p>likes: 19.8,</p>
-							<p>videos: 388,</p>
-							<p>followers: 2571,</p>
-							<p>verified: false</p>
-							<p>&#125;;</p>
-							<br></br>
-							<p>// updating an object value</p>
-							<p>myProfile.verified = true;</p>
-							<br></br>
-							<p>// adding a new object value</p>
-							<p>myProfile.active = true;</p>
-						</div>
-					}
+					codeSnippet={`// my user profile object
+let myProfile = {
+	username: 'mario.zamora',
+	bio: 'Software Engineer 🤓',
+	website: 'laternerd.com',
+	followers: 2571,
+	likes: 19.8,
+	videos: 388,
+	followers: 2571,
+	verified: false
+};
+					
+					
+// updating an object value
+myProfile.verified = true;
+					
+// adding a new object value
+myProfile.active = true;`}
 				/>
 			),
 		},
@@ -395,9 +327,9 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7148925986434731306`}
+					vidSrc={`${tiktokEmbedLink}7148925986434731306`}
 					explanation={null}
-					example={null}
+					codeSnippet={null}
 				/>
 			),
 		},
@@ -408,7 +340,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151195266224262446`}
+					vidSrc={`${tiktokEmbedLink}7151195266224262446`}
 					explanation={
 						<div>
 							<p>Use this to get the value of two or more numbers.</p>
@@ -419,38 +351,26 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<div>
-								<p>
-									// <strong>Addition: +</strong>
-								</p>
-								<p>let equalsSeven = 3 + 4;</p>
-								<br></br>
-								<p>
-									// <strong>Subtraction: -</strong>
-								</p>
-								<p>let equalsTwo = 10 - 8;</p>
-								<br></br>
-								<p>
-									// <strong>Multiplication: *</strong>
-								</p>
-								<p>let equalsSix = 3 * 2;</p>
-								<br></br>
-								<p>
-									// <strong>Division: /</strong>
-								</p>
-								<p>let equalsFive = 25 / 5;</p>
-								<br></br>
-								<p>
-									// <strong>Remainder/Modulo: %</strong>
-								</p>
-								<p>let equalsOne = 10 % 3;</p>
-								<p>let equalsZero = 25 % 5;</p>
-								<p>let equalsThree = 11 % 4;</p>
-							</div>
-						</div>
-					}
+					codeSnippet={`// Addition: +
+let equalsSeven = 3 + 4;
+					
+					
+// Subtraction: -
+let equalsTwo = 10 - 8;
+					
+					
+// Multiplication: *
+let equalsSix = 3 * 2;
+					
+					
+// Division: /
+let equalsFive = 25 / 5;
+					
+					
+// Remainder/Modulo: %
+let equalsOne = 10 % 3;
+let equalsZero = 25 % 5;
+let equalsThree = 11 % 4;`}
 				/>
 			),
 		},
@@ -461,7 +381,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151209648559836458`}
+					vidSrc={`${tiktokEmbedLink}7151209648559836458`}
 					explanation={
 						<div>
 							<p>Tells your code what math to do first.</p>
@@ -471,18 +391,13 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// Without Order Precedence</p>
-							<p>(5 * 5) / 5 - 2; // equals 3</p>
-							<br></br>
-							<p>
-								// <strong>With Order Precedence</strong>
-							</p>
-							<p>(5 * 5) / (5 - 2); // equals 8.333</p>
-							<p>25 / 3; // 8.333</p>
-						</div>
-					}
+					codeSnippet={`// Without Order Precedence
+(5 * 5) / 5 - 2; // equals 3
+					
+					
+// With Order Precedence
+(5 * 5) / (5 - 2); // equals 8.333
+25 / 3; // 8.333`}
 				/>
 			),
 		},
@@ -493,31 +408,24 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151235536026406190`}
+					vidSrc={`${tiktokEmbedLink}7151235536026406190`}
 					explanation={
 						<div>
 							<p>A quick way to add or subtract a number by one.</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>
-								// <strong>increment</strong>
-							</p>
-							<p>let addOne = 0;</p>
-							<p>addOne++; // 1</p>
-							<p>addOne++; // 2</p>
-							<p>addOne++; // 3</p>
-							<br></br>
-							<p>
-								// <strong>decrement</strong>
-							</p>
-							<p>let subtractOne = 3;</p>
-							<p>subtractOne--; // 2</p>
-							<p>subtractOne--; // 1</p>
-							<p>subtractOne--; // 0</p>
-						</div>
-					}
+					codeSnippet={`// increment
+let addOne = 0;
+addOne++; // 1
+addOne++; // 2
+addOne++; // 3
+					
+					
+// decrement
+let subtractOne = 3;
+subtractOne--; // 2
+subtractOne--; // 1
+subtractOne--; // 0`}
 				/>
 			),
 		},
@@ -528,7 +436,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151265482761407786`}
+					vidSrc={`${tiktokEmbedLink}7151265482761407786`}
 					explanation={
 						<div>
 							<p>A quick way to give a variable a new value.</p>
@@ -554,27 +462,20 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>// Addition </p>
-							<p>let add = 3;</p>
-							<p>add = add + 4; // 7</p>
-							<br></br>
-							<p>
-								// <strong>Addition alternative</strong>
-							</p>
-							<p>add += 4; // 7</p>
-							<br></br>
-							<p>// Subtraction </p>
-							<p>let subtract = 3;</p>
-							<p>subtract = subtract - 2; // 1</p>
-							<br></br>
-							<p>
-								// <strong>Subtraction alternative</strong>
-							</p>
-							<p>subtract -= 2; // 1</p>
-						</div>
-					}
+					codeSnippet={`// Addition
+let add = 3;
+add = add + 4; // 7
+					
+// Addition alternative
+add += 4; // 7
+					
+					
+// Subtraction
+let subtract = 3;
+subtract = subtract - 2; // 1
+					
+// Subtraction alternative
+subtract -= 2; // 1`}
 				/>
 			),
 		},
@@ -585,7 +486,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151472626358291758`}
+					vidSrc={`${tiktokEmbedLink}7151472626358291758`}
 					explanation={
 						<div>
 							<p>Use this when you wanna test if something is true or false.</p>
@@ -603,26 +504,18 @@ let myProfile = {
 							<p></p>
 						</div>
 					}
-					example={
-						<div>
-							<p>
-								// <strong>strict equality:</strong> are both values the same?
-							</p>
-							<p>'elephant' === 'elephant'; // true</p>
-							<p>true === false; // false</p>
-							<p>'elephant' === 5; // false</p>
-							<p>3 === 3; // true</p>
-							<br></br>
-							<p>
-								// <strong>strict non equality:</strong> both values are not the
-								same
-							</p>
-							<p>'elephant' !== 'elephant'; // false</p>
-							<p>true !== false; // true</p>
-							<p>'elephant' !== 5; // true</p>
-							<p>3 !== 3; // false</p>
-						</div>
-					}
+					codeSnippet={`// strict equality: are both values the same?
+'elephant' === 'elephant'; // true
+true === false; // false
+'elephant' === 5; // false
+3 === 3; // true
+					
+					
+// strict non equality: both values are not the same
+'elephant' !== 'elephant'; // false
+true !== false; // true
+'elephant' !== 5; // true
+3 !== 3; // false`}
 				/>
 			),
 		},
@@ -633,7 +526,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7151490219278257454`}
+					vidSrc={`${tiktokEmbedLink}7151490219278257454`}
 					explanation={
 						<div>
 							<p>Use this when you wanna test if something is true or false.</p>
@@ -651,41 +544,28 @@ let myProfile = {
 							<p></p>
 						</div>
 					}
-					example={
-						<div>
-							<p>
-								// <strong>less than:</strong> is the value on the left smaller
-								than the right?
-							</p>
-							<p>5 &#60; 8; // true</p>
-							<p>5 &#60; 3; // false</p>
-							<p>5 &#60; 5; // false</p>
-							<br></br>
-							<p>
-								// <strong>greater than:</strong> is the value on the left
-								bigger than the right?{' '}
-							</p>
-							<p>5 &#62; 8; // false</p>
-							<p>5 &#62; 3; // true</p>
-							<p>5 &#62; 5; // false</p>
-							<br></br>
-							<p>
-								// <strong>less than or equal to:</strong> is the value on the
-								left smaller or equal to the value on the right?{' '}
-							</p>
-							<p>5 &#60;= 8; // true</p>
-							<p>5 &#60;= 3; // false</p>
-							<p>5 &#60;= 5; // true</p>
-							<br></br>
-							<p>
-								<strong>greater than or equal to:</strong> is the value on the
-								left bigger or equal to the value on the right?{' '}
-							</p>
-							<p>5 &#62;= 8; // false</p>
-							<p>5 &#62;= 3; // false</p>
-							<p>5 &#62;= 5; // true</p>
-						</div>
-					}
+					codeSnippet={`// less than: is the value on the left smaller than the right?
+5 < 8; // true
+5 < 3; // false
+5 < 5; // false
+					
+					
+// greater than: is the value on the left bigger than the right?
+5 > 8; // false
+5 > 3; // true
+5 > 5; // false
+					
+					
+// less than or equal to: is the value on the left smaller or equal to the value on the right?
+5 <= 8; // true
+5 <= 3; // false
+5 <= 5; // true
+					
+					
+// greater than or equal to: is the value on the left bigger or equal to the value on the right?
+5 >= 8; // false
+5 >= 3; // false
+5 >= 5; // true`}
 				/>
 			),
 		},
@@ -696,7 +576,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7153025707411541290`}
+					vidSrc={`${tiktokEmbedLink}7153025707411541290`}
 					explanation={
 						<div>
 							<p>Lets you do things only if something's true.</p>
@@ -710,25 +590,19 @@ let myProfile = {
 							</ul>
 						</div>
 					}
-					example={
-						<div>
-							<p>let mealsEaten = 0;</p>
-							<p>let ateBreakfast = false;</p>
-							<br></br>
-							<p>
-								// <strong>if this is trues</strong>
-							</p>
-							<p>if (mealsEaten === 0) &#123;</p>
-							<p>
-								// <strong>make this happen</strong>
-							</p>
-							<p>// update breakfast</p>
-							<p>ateBreakfast = true;</p>
-							<p>// increment mealsEaten by one</p>
-							<p>mealsEaten++;</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`let mealsEaten = 0;
+let ateBreakfast = false;
+					
+					
+// if this is trues do this
+if (mealsEaten === 0) {
+						
+	// update breakfast
+	ateBreakfast = true;
+					
+	// increment mealsEaten by one
+	mealsEaten++;
+}`}
 				/>
 			),
 		},
@@ -739,7 +613,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7153057077319994666`}
+					vidSrc={`${tiktokEmbedLink}7153057077319994666`}
 					explanation={
 						<div>
 							<p>Lets you do things only if something's true.</p>
@@ -755,24 +629,16 @@ let myProfile = {
 							</ul>
 						</div>
 					}
-					example={
-						<div>
-							<p>let day = 'Monday';</p>
-							<p>let emotion;</p>
-							<br></br>
-							<p>
-								// <strong>if this is true</strong>
-							</p>
-							<p>if (day === 'Monday') &#123;</p>
-							<p>
-								// <strong>make this happen</strong>
-							</p>
-							<p>emotion = '🥳';</p>
-							<p>&#125; else &#123;</p>
-							<p>emotion = '🥲';</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`let day = 'Monday';
+let emotion;
+					
+					
+// if this is true do this
+if (day === 'Monday') {
+	emotion = '🥳';
+} else {
+	emotion = '🥲';
+}`}
 				/>
 			),
 		},
@@ -783,7 +649,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7153113451362110763`}
+					vidSrc={`${tiktokEmbedLink}7153113451362110763`}
 					explanation={
 						<div>
 							<p>
@@ -807,32 +673,22 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>let day = 'Tuesday';</p>
-							<p>let emotion;</p>
-							<br></br>
-							<p>
-								// <strong>if this is true</strong>
-							</p>
-							<p>if (day === 'Monday') &#123;</p>
-							<p>
-								// <strong>do this</strong>
-							</p>
-							<p>emotion = '🥳';</p>
-							<p>
-								// <strong>or if this is true</strong>
-							</p>
-							<p>&#125; else if (day === 'Tuesday') &#123;</p>
-							// <strong>do this</strong>
-							<p>emotion = '😝';</p>
-							// <strong>otherwise</strong>
-							<p>&#125; else &#123;</p>
-							// <strong>do this</strong>
-							<p>emotion = '🥲';</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`let day = 'Tuesday';
+let emotion;
+					
+					
+// if this is true do this
+if (day === 'Monday') {
+	emotion = '🥳';
+					
+	// or if this is true do this
+} else if (day === 'Tuesday') {
+	emotion = '😝';
+						
+	// otherwise do this
+} else {
+	emotion = '🥲';
+}`}
 				/>
 			),
 		},
@@ -843,7 +699,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7153764533641776426`}
+					vidSrc={`${tiktokEmbedLink}7153764533641776426`}
 					explanation={
 						<div>
 							<p>
@@ -856,43 +712,26 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>let title = 'Mr.';</p>
-							<p>let fullName = 'Potato Head';</p>
-							<p>let greeting;</p>
-							<br></br>
-							<p>
-								// <strong>will not run</strong>
-							</p>
-							<p>
-								// <strong>if both conditions are true</strong>
-							</p>
-							<p>if (title === 'Mrs.' && fullName === 'Potato Head') &#123;</p>
-							<p>
-								// <strong>do this</strong>
-							</p>
-							<p>greeting = 'Hello, Mrs. Potato Head';</p>
-							<p>&#125;</p>
-							<br></br>
-							<p>let title = 'Mrs.';</p>
-							<p>let fullName = 'Potato Head';</p>
-							<p>let greeting;</p>
-							<br></br>
-							<p>
-								// <strong>will run</strong>
-							</p>
-							<p>
-								// <strong>if both conditions are true</strong>
-							</p>
-							<p>if (title === 'Mrs.' && fullName === 'Potato Head') &#123;</p>
-							<p>
-								// <strong>do this</strong>
-							</p>
-							<p>greeting = 'Hello, Mrs. Potato Head';</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`let title = 'Mr.';
+let fullName = 'Potato Head';
+let greeting;
+					
+					
+// will not run if both conditions are true
+if (title === 'Mrs.' && fullName === 'Potato Head') {
+	greeting = 'Hello, Mrs. Potato Head';
+}
+					
+					
+let title = 'Mrs.';
+let fullName = 'Potato Head';
+let greeting;
+					
+					
+// will run if both conditions are true
+if (title === 'Mrs.' && fullName === 'Potato Head') {
+	greeting = 'Hello, Mrs. Potato Head';
+}`}
 				/>
 			),
 		},
@@ -903,7 +742,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7153751879040781614`}
+					vidSrc={`${tiktokEmbedLink}7153751879040781614`}
 					explanation={
 						<div>
 							<p>Use it when two or more things can make something happen.</p>
@@ -913,27 +752,18 @@ let myProfile = {
 							</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>let day = 'Monday';</p>
-							<p>let emotion;</p>
-							<br></br>
-							<p>
-								// <strong>if either condition is true</strong>
-							</p>
-							<p>if (day === 'Monday' || day === 'Friday') &#123;</p>
-							<p>
-								// <strong>do this</strong>
-							</p>
-							<p>emotion = '🥳';</p>
-							<p>&#125; else &#123;</p>
-							<p>
-								// <strong>do this</strong>
-							</p>
-							<p>emotion = '🫣';</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`let day = 'Monday';
+let emotion;
+					
+					
+// if either condition is true do this
+if (day === 'Monday' || day === 'Friday') {
+	emotion = '🥳';
+					
+	// otherwise do this
+} else {
+	emotion = '🫣';
+}`}
 				/>
 			),
 		},
@@ -944,7 +774,7 @@ let myProfile = {
 		content: {
 			content: (
 				<PanelInfo
-					vidSrc={`${tiktokEmbed}7154171722831367470`}
+					vidSrc={`${tiktokEmbedLink}7154171722831367470`}
 					explanation={
 						<div>
 							<p>What's something you do all the time?</p>
@@ -957,46 +787,30 @@ let myProfile = {
 							<p>You tell it what you want, and then it does the job.</p>
 						</div>
 					}
-					example={
-						<div>
-							<p>
-								//{' '}
-								<strong>
-									Functions: takes one job and breaks it down into little steps
-								</strong>
-							</p>
-							<p>
-								<strong>// and then gives you an answer</strong>
-							</p>
-							<br></br>
-							<p>function name(params) &#123;</p>
-							<p>// take in variables</p>
-							<p>// do some steps</p>
-							<p>// sends back an answer</p>
-							<p>return;</p>
-							<p>&#125;</p>
-							<br></br>
-							<p>
-								// <strong>Add two numbers</strong>
-							</p>
-							<p>function add(numOne, numTwo) &#123;</p>
-							<p>
-								// <strong>take in values</strong>
-							</p>
-							<br></br>
-							<p>
-								// <strong>steps:</strong>
-							</p>
-							<p>// add two numbers together</p>
-							<p>let add = numOne + numTwo;</p>
-							<br></br>
-							<p>
-								// <strong>result:</strong> two numbers added together
-							</p>
-							<p>return add;</p>
-							<p>&#125;</p>
-						</div>
-					}
+					codeSnippet={`// Functions: takes one job and breaks it down into little steps and then gives you an answer
+
+
+// take in variables
+function name(params) {
+					
+	// do some steps
+					
+	// sends back an answer
+	return;
+}
+					
+					
+// Add two numbers
+// take in two values
+function add(numOne, numTwo) {
+					
+	// steps:
+	// add two numbers together
+	let add = numOne + numTwo;
+					
+	// result: two numbers added together
+	return add;
+}`}
 				/>
 			),
 		},
