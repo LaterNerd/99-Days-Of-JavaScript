@@ -1,14 +1,6 @@
-import { Divider, Embed, Header, Message } from 'semantic-ui-react';
-import ReactMarkdown from 'react-markdown';
+import { Divider, Embed, Header } from 'semantic-ui-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import {
-	coldarkDark,
-	dracula,
-	materialDark,
-	materialOceanic,
-	oneDark,
-	tomorrow,
-} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const PanelInfo = ({ vidSrc, explanation, example }) => (
 	<div>
