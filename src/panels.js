@@ -1,4 +1,14 @@
 import { Divider, Embed, Header, Message } from 'semantic-ui-react';
+import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import {
+	coldarkDark,
+	dracula,
+	materialDark,
+	materialOceanic,
+	oneDark,
+	tomorrow,
+} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const PanelInfo = ({ vidSrc, explanation, example }) => (
 	<div>
@@ -14,7 +24,7 @@ const PanelInfo = ({ vidSrc, explanation, example }) => (
 		{example ? (
 			<>
 				<Header as={'h3'}>How do you use it?</Header>
-				<Message>{example}</Message>
+				<>{example}</>
 			</>
 		) : null}
 	</div>
@@ -301,29 +311,34 @@ const panels = [
 						</div>
 					}
 					example={
-						<div>
-							<p>// my user profile variables</p>
-							<p>let username = 'mario.zamora';</p>
-							<p>let bio = 'Software Engineer 🤓';</p>
-							<p>let website = 'laternerd.com';</p>
-							<p>let likes = 19.8;</p>
-							<p>let videos = 388;</p>
-							<p>let verified = false;</p>
-							<br></br>
-							<p>
-								// <strong>my user profile as an object</strong>
-							</p>
-							<p>let myProfile = &#123;</p>
-							<p> username: 'mario.zamora',</p>
-							<p> bio: 'Software Engineer 🤓',</p>
-							<p> website: 'laternerd.com',</p>
-							<p>followers: 2571,</p>
-							<p>likes: 19.8,</p>
-							<p>videos: 388,</p>
-							<p>followers: 2571,</p>
-							<p>verified: false</p>
-							<p>&#125;;</p>
-						</div>
+						<>
+							<SyntaxHighlighter
+								showLineNumbers
+								language='javascript'
+								style={coldarkDark}
+							>
+								{`// my user profile as variables
+let username = 'mario.zamora';
+let bio = 'Software Engineer 🤓';
+let website = 'laternerd.com';
+let likes = 19.8;
+let videos = 388;
+let verified = false;
+
+
+// my user profile as an object
+let myProfile = {
+	username: 'mario.zamora',
+	bio: 'Software Engineer 🤓',
+	website: 'laternerd.com',
+	followers: 2571,
+	likes: 19.8,
+	videos: 388,
+	followers: 2571,
+	verified: false
+};`}
+							</SyntaxHighlighter>
+						</>
 					}
 				/>
 			),
