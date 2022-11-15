@@ -1,33 +1,51 @@
 export const variablesCodeSnippet = `
-Examples:
+// 1. create a variable called firstName
+// 2. that tracks a string
+// 3. with the value 'Mario.'
 
-// create a variable called firstName that tracks the string 'Mario.'
 
-// create a variable called age that tracks the number 35
+// 1. create a variable called age
+// 2. that tracks the number
+// 3. with the value 35
 
-// create a variable called verified that tracks the boolean false
+
+// 1. create a variable called verified
+// 2. that tracks the boolean
+// 3. with the value false
 `;
 
 export const variableNameCodeSnippet = `
-Name Examples:
-
+// names with single words
 - age
 - login
 - verified
 
+
+// names with many words
 - first name => firstName
 - last name => lastName
 - phone number => phoneNumber
 `;
 
 export const primitivesCodeSnippet = `
-Examples:
+// string values:
+'Mario', 'Hi 👋', 'laternerd.com'
 
-- string: 'Mario', 'Hi 👋', 'laternerd.com'
-- number: 0, 13, 10,000
-- boolean: true, false
-- null: null
-- undefined: undefined
+
+// number values:
+0, 13, 10000
+
+
+// boolean values:
+true, false
+
+
+// null value:
+null
+
+
+// undefined value:
+undefined
 `;
 
 export const letCodeSnippet = `
@@ -47,13 +65,21 @@ const funny = true;
 `;
 
 export const variableDeclarationCodeSnippet = `
-// create a variable called firstName that tracks the string 'Mario.'
+// 1. create a variable
+// 2. called firstName
+// 3. that tracks the string 'Mario.'
 let firstName = 'Mario';
 
-// create a variable called age that tracks the number 35
+
+// 1. create a variable
+// 2. called age
+// 3. that tracks the number 35
 let age = 35;
 
-// create a variable called verified that tracks the boolean false
+
+// 1. create a variable
+// 2. called verified
+// 3. that tracks the boolean false
 let verified = false;
 `;
 

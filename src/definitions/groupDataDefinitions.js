@@ -1,14 +1,3 @@
-// import {
-// 	arraysCodeSnippet,
-// 	objectsCodeSnippet,
-// 	updatingObjectsCodeSnippet,
-// 	methodsCodeSnippet,
-// 	writingMethodsCodeSnippet,
-// 	thisCodeSnippet,
-// 	classesPartOneCodeSnippet,
-// 	classesPartTwoCodeSnippet,
-// } from '../codeSnippets';
-
 export const arraysDefinition = `
 Sometimes you need to create a group of things with the same type.
 											

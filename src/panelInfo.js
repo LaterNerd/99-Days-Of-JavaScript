@@ -25,7 +25,7 @@ export const PanelInfo = ({
 			<>
 				<Header as={'h3'}>How do you use it?</Header>
 				<SyntaxHighlighter
-					wrapLongLines
+					// wrapLongLines
 					children={codeSnippet}
 					showLineNumbers
 					language='javascript'

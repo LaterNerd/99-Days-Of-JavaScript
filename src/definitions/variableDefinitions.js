@@ -1,13 +1,3 @@
-// import {
-// 	variablesCodeSnippet,
-// 	variableNameCodeSnippet,
-// 	primitivesCodeSnippet,
-// 	letCodeSnippet,
-// 	constCodeSnippet,
-// 	variableDeclarationCodeSnippet,
-// 	updatingVariablesCodeSnippet,
-// } from '../codeSnippets';
-
 export const variableDefinition = `
 In code, we need to be able to keep
 track of data (text, numbers, true/false)
@@ -58,7 +48,7 @@ They're the basic types of values you can have.
 `;
 
 export const letDefinition = `
-**'let'** tells your code when you're creating a new variable.
+*'let'* tells your code when you're creating a new variable.
 
 #### When do you use it?
 - Before creating a new variable name
@@ -68,7 +58,7 @@ export const letDefinition = `
 `;
 
 export const constDefinition = `
-**'const'** tells your code when you're creating a new variable.
+*'const'* tells your code when you're creating a new variable.
 
 #### When do you use it?
 - Before creating a new variable name

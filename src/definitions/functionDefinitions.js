@@ -1,9 +1,3 @@
-// import {
-// 	functionDeclarationCodeSnippet,
-// 	writingFunctionsCodeSnippet,
-// 	callingFunctionsCodeSnippet,
-// } from '../codeSnippets';
-
 export const functionDeclarationDefinition = `
 What's something you do all the time?
 

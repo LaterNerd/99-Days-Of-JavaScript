@@ -1,12 +1,3 @@
-// import {
-// 	assignmentOperatorsCodeSnippet,
-// 	ifStatementsCodeSnippet,
-// 	ifElseStatementsCodeSnippet,
-// 	elseIfStatementsCodeSnippet,
-// 	logicalAndCodeSnippet,
-// 	logicalOrCodeSnippet,
-// } from '../codeSnippets';
-
 export const ifStatementsDefinition = `
 Lets you do things only if something's true.
 
