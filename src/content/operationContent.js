@@ -4,16 +4,18 @@ import { TIKTOK_EMBED_LINK } from '../constants';
 import {
 	arithmeticOperatorsDefinition,
 	assignmentOperatorsDefinition,
+	incrementDecrementDefinition,
 	operatorPrecedenceDefinition,
 	comparisonOperatorsDefinition,
 } from '../definitions/operationDefinitions';
 import {
 	arithmeticOperatorsCodeSnippet,
 	assignmentOperatorsCodeSnippet,
+	incrementDecrementCodeSnippet,
 	operatorPrecedenceCodeSnippet,
 	comparisonOperatorsPartOneCodeSnippet,
 	comparisonOperatorsPartTwoCodeSnippet,
-} from '../codeSnippets';
+} from '../codeSnippets/operationCodeSnippets';
 
 const operationPanels = [
 	{
@@ -38,6 +40,19 @@ const operationPanels = [
 					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
 					lessonDefinition={assignmentOperatorsDefinition}
 					codeSnippet={assignmentOperatorsCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: 'incrementDecrement',
+		title: 'Increment + Decrement',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151235536026406190`}
+					lessonDefinition={incrementDecrementDefinition}
+					codeSnippet={incrementDecrementCodeSnippet}
 				/>
 			),
 		},

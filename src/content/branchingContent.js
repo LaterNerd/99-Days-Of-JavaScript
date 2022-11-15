@@ -14,7 +14,7 @@ import {
 	elseIfStatementsCodeSnippet,
 	logicalAndCodeSnippet,
 	logicalOrCodeSnippet,
-} from '../codeSnippets';
+} from '../codeSnippets/branchingCodeSnippets';
 
 const branchingPanels = [
 	{

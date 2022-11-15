@@ -17,7 +17,7 @@ import {
 	thisCodeSnippet,
 	classesPartOneCodeSnippet,
 	classesPartTwoCodeSnippet,
-} from '../codeSnippets';
+} from '../codeSnippets/groupDataCodeSnippets';
 
 const groupDataPanels = [
 	{

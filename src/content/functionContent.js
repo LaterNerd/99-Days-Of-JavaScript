@@ -6,7 +6,7 @@ import {
 	functionDeclarationCodeSnippet,
 	writingFunctionsCodeSnippet,
 	callingFunctionsCodeSnippet,
-} from '../codeSnippets';
+} from '../codeSnippets/functionCodeSnippets';
 
 const functionPanels = [
 	{

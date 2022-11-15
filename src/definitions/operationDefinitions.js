@@ -1,10 +1,3 @@
-// import {
-// 	arithmeticOperatorsCodeSnippet,
-// 	operatorPrecedenceCodeSnippet,
-// 	comparisonOperatorsPartOneCodeSnippet,
-// 	comparisonOperatorsPartTwoCodeSnippet,
-// } from '../codeSnippets';
-
 export const arithmeticOperatorsDefinition = `
 Use this to get the value of two or more numbers.
 

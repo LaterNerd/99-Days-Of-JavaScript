@@ -16,7 +16,7 @@ import {
 	constCodeSnippet,
 	variableDeclarationCodeSnippet,
 	updatingVariablesCodeSnippet,
-} from '../codeSnippets';
+} from '../codeSnippets/variableCodeSnippets';
 
 const variablePanels = [
 	{
