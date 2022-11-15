@@ -1,9 +1,11 @@
 import { PanelInfo } from './panelInfo';
+import { TIKTOK_EMBED_LINK } from './constants';
 import {
+	variableDefinition,
+	variableNameDefinition,
+	primitivesDefinition,
 	letDefinition,
 	constDefinition,
-	variablesDefinition,
-	primitivesDefinition,
 	arraysDefinition,
 	objectsDefinition,
 	arithmeticOperatorsDefinition,
@@ -22,10 +24,12 @@ import {
 	classesDefinition,
 } from './definitions';
 import {
-	constCodeSnippet,
-	letCodeSnippet,
 	variablesCodeSnippet,
+	variableNameCodeSnippet,
 	primitivesCodeSnippet,
+	letCodeSnippet,
+	constCodeSnippet,
+	variableDeclarationCodeSnippet,
 	arraysCodeSnippet,
 	objectsCodeSnippet,
 	updatingVariablesCodeSnippet,
@@ -51,8 +55,6 @@ import {
 	classesPartTwoCodeSnippet,
 } from './codeSnippets';
 
-const TIKTOK_EMBED_LINK = 'https://www.tiktok.com/embed/v2/';
-
 const panels = [
 	{
 		key: 'whatsJavaScript',
@@ -68,12 +70,51 @@ const panels = [
 		},
 	},
 	{
-		key: 'letKeyword',
-		title: "'let' keyword",
+		key: '',
+		title: 'What are variables used for?',
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7147911443403246891`}
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164566076225998126`}
+					lessonDefinition={variableDefinition}
+					codeSnippet={variablesCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'How to name a variable?',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164908710643502379`}
+					lessonDefinition={variableNameDefinition}
+					codeSnippet={variableNameCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: 'What are primitive data types?',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7165016641443564843`}
+					lessonDefinition={primitivesDefinition}
+					codeSnippet={primitivesCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: "What does 'let' mean?",
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164955319293005099`}
 					lessonDefinition={letDefinition}
 					codeSnippet={letCodeSnippet}
 				/>
@@ -81,12 +122,12 @@ const panels = [
 		},
 	},
 	{
-		key: 'constKeyword',
-		title: "'const' keyword",
+		key: '',
+		title: "What does 'const' mean?",
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7147920146705747243`}
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164962890405956910`}
 					lessonDefinition={constDefinition}
 					codeSnippet={constCodeSnippet}
 				/>
@@ -94,27 +135,14 @@ const panels = [
 		},
 	},
 	{
-		key: 'variables',
-		title: 'Variables',
+		key: '',
+		title: 'How do you declare a variable?',
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7147927267623177518`}
-					lessonDefinition={variablesDefinition}
-					codeSnippet={variablesCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'primitives',
-		title: 'Primitive Types',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148160337571892526`}
-					lessonDefinition={primitivesDefinition}
-					codeSnippet={primitivesCodeSnippet}
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7166048950410104106`}
+					lessonDefinition={null}
+					codeSnippet={variableDeclarationCodeSnippet}
 				/>
 			),
 		},

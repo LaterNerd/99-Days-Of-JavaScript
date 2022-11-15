@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 
 export const PanelInfo = ({
 	videoEmbedLink,
+	definitionHeader,
 	lessonDefinition,
 	codeSnippet,
 }) => (
@@ -13,7 +14,9 @@ export const PanelInfo = ({
 		<Divider hidden />
 		{lessonDefinition ? (
 			<>
-				<Header as={'h3'}>What is it?</Header>
+				<Header as={'h3'}>
+					{definitionHeader ? definitionHeader : 'What is it?'}
+				</Header>
 				<ReactMarkdown children={lessonDefinition} />
 				<Divider hidden />
 			</>
@@ -22,6 +25,7 @@ export const PanelInfo = ({
 			<>
 				<Header as={'h3'}>How do you use it?</Header>
 				<SyntaxHighlighter
+					wrapLongLines
 					children={codeSnippet}
 					showLineNumbers
 					language='javascript'
