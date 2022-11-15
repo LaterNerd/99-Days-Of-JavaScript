@@ -1,5 +1,5 @@
 import { PanelInfo } from '../panelInfo';
-import { Accordion } from 'semantic-ui-react';
+import { Accordion, Header } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
 	variableDefinition,
@@ -139,5 +139,8 @@ const variablePanels = [
 ];
 
 export const variableContent = (
-	<Accordion fluid styled panels={variablePanels} />
+	<div>
+		<Header block as='h3' textAlign='center' content='START HERE 👇' />
+		<Accordion fluid styled panels={variablePanels} />
+	</div>
 );
