@@ -1,7 +1,7 @@
 import { PanelInfo } from '../panelInfo';
 import { Accordion } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
-import { functionDeclarationDefinition } from '../definitions';
+import { functionDeclarationDefinition } from '../definitions/functionDefinitions';
 import {
 	functionDeclarationCodeSnippet,
 	writingFunctionsCodeSnippet,

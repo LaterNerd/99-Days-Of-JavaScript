@@ -7,7 +7,7 @@ import {
 	methodsDefinition,
 	thisDefinition,
 	classesDefinition,
-} from '../definitions';
+} from '../definitions/groupDataDefinitions';
 import {
 	arraysCodeSnippet,
 	objectsCodeSnippet,

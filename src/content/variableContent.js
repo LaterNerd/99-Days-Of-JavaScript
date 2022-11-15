@@ -7,7 +7,7 @@ import {
 	primitivesDefinition,
 	letDefinition,
 	constDefinition,
-} from '../definitions';
+} from '../definitions/variableDefinitions';
 import {
 	variablesCodeSnippet,
 	variableNameCodeSnippet,

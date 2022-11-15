@@ -2,15 +2,13 @@ import { PanelInfo } from '../panelInfo';
 import { Accordion } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
-	assignmentOperatorsDefinition,
 	ifStatementsDefinition,
 	ifElseStatementsDefinition,
 	elseIfStatementsDefinition,
 	logicalAndDefinition,
 	logicalOrDefinition,
-} from '../definitions';
+} from '../definitions/branchingDefinitions';
 import {
-	assignmentOperatorsCodeSnippet,
 	ifStatementsCodeSnippet,
 	ifElseStatementsCodeSnippet,
 	elseIfStatementsCodeSnippet,
@@ -19,20 +17,6 @@ import {
 } from '../codeSnippets';
 
 const branchingPanels = [
-	{
-		key: 'assignmentOperators',
-		title: 'Assignment Operators',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
-					lessonDefinition={assignmentOperatorsDefinition}
-					codeSnippet={assignmentOperatorsCodeSnippet}
-				/>
-			),
-		},
-	},
-
 	{
 		key: 'ifStatements',
 		title: 'IF Statements',

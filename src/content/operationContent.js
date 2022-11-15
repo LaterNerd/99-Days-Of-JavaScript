@@ -3,11 +3,13 @@ import { Accordion } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
 	arithmeticOperatorsDefinition,
+	assignmentOperatorsDefinition,
 	operatorPrecedenceDefinition,
 	comparisonOperatorsDefinition,
-} from '../definitions';
+} from '../definitions/operationDefinitions';
 import {
 	arithmeticOperatorsCodeSnippet,
+	assignmentOperatorsCodeSnippet,
 	operatorPrecedenceCodeSnippet,
 	comparisonOperatorsPartOneCodeSnippet,
 	comparisonOperatorsPartTwoCodeSnippet,
@@ -23,6 +25,19 @@ const operationPanels = [
 					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151195266224262446`}
 					lessonDefinition={arithmeticOperatorsDefinition}
 					codeSnippet={arithmeticOperatorsCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: 'assignmentOperators',
+		title: 'Assignment Operators',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
+					lessonDefinition={assignmentOperatorsDefinition}
+					codeSnippet={assignmentOperatorsCodeSnippet}
 				/>
 			),
 		},
