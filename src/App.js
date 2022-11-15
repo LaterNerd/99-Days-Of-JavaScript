@@ -1,7 +1,7 @@
 import 'semantic-ui-css/semantic.min.css';
 import { Accordion, Container, Header, Segment } from 'semantic-ui-react';
 import './App.css';
-import rootPanels from './panels';
+import { rootPanels } from './rootPanels';
 
 function App() {
 	return (
