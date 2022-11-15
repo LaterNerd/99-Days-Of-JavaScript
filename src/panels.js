@@ -1,4 +1,5 @@
 import { PanelInfo } from './panelInfo';
+import { Accordion, Header } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from './constants';
 import {
 	variableDefinition,
@@ -10,7 +11,6 @@ import {
 	objectsDefinition,
 	arithmeticOperatorsDefinition,
 	operatorPrecedenceDefinition,
-	incrementDecrementDefinition,
 	assignmentOperatorsDefinition,
 	comparisonOperatorsDefinition,
 	ifStatementsDefinition,
@@ -36,7 +36,6 @@ import {
 	updatingObjectsCodeSnippet,
 	arithmeticOperatorsCodeSnippet,
 	operatorPrecedenceCodeSnippet,
-	incrementDecrementCodeSnippet,
 	assignmentOperatorsCodeSnippet,
 	comparisonOperatorsPartOneCodeSnippet,
 	comparisonOperatorsPartTwoCodeSnippet,
@@ -55,9 +54,9 @@ import {
 	classesPartTwoCodeSnippet,
 } from './codeSnippets';
 
-const panels = [
+const variablePanels = [
 	{
-		key: 'whatsJavaScript',
+		key: 'JavaScript',
 		title: "What's JavaScript",
 		content: {
 			content: (
@@ -70,7 +69,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'variables',
 		title: 'What are variables used for?',
 		content: {
 			content: (
@@ -83,7 +82,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'nameVariable',
 		title: 'How to name a variable?',
 		content: {
 			content: (
@@ -96,7 +95,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'primitiveDataTypes',
 		title: 'What are primitive data types?',
 		content: {
 			content: (
@@ -109,7 +108,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'let',
 		title: "What does 'let' mean?",
 		content: {
 			content: (
@@ -122,7 +121,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'const',
 		title: "What does 'const' mean?",
 		content: {
 			content: (
@@ -135,7 +134,7 @@ const panels = [
 		},
 	},
 	{
-		key: '',
+		key: 'declareVariable',
 		title: 'How do you declare a variable?',
 		content: {
 			content: (
@@ -143,32 +142,6 @@ const panels = [
 					videoEmbedLink={`${TIKTOK_EMBED_LINK}7166048950410104106`}
 					lessonDefinition={null}
 					codeSnippet={variableDeclarationCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'arrays',
-		title: 'Arrays',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148251584324209966`}
-					lessonDefinition={arraysDefinition}
-					codeSnippet={arraysCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'objects',
-		title: 'Objects',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148271817965178154`}
-					lessonDefinition={objectsDefinition}
-					codeSnippet={objectsCodeSnippet}
 				/>
 			),
 		},
@@ -187,19 +160,6 @@ const panels = [
 		},
 	},
 	{
-		key: 'updatingObjects',
-		title: 'Updating Objects',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148623993590009134`}
-					lessonDefinition={null}
-					codeSnippet={updatingObjectsCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
 		key: 'comments',
 		title: 'Comments',
 		content: {
@@ -212,6 +172,11 @@ const panels = [
 			),
 		},
 	},
+];
+
+const variableContent = <Accordion fluid styled panels={variablePanels} />;
+
+const operationPanels = [
 	{
 		key: 'arithmeticOperators',
 		title: 'Arithmetic Operators',
@@ -234,32 +199,6 @@ const panels = [
 					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151209648559836458`}
 					lessonDefinition={operatorPrecedenceDefinition}
 					codeSnippet={operatorPrecedenceCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'incrementDecrement',
-		title: 'Increment + Decrement',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151235536026406190`}
-					lessonDefinition={incrementDecrementDefinition}
-					codeSnippet={incrementDecrementCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'assignmentOperators',
-		title: 'Assignment Operators',
-		content: {
-			content: (
-				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
-					lessonDefinition={assignmentOperatorsDefinition}
-					codeSnippet={assignmentOperatorsCodeSnippet}
 				/>
 			),
 		},
@@ -290,6 +229,30 @@ const panels = [
 			),
 		},
 	},
+];
+
+const operationContent = <Accordion fluid styled panels={operationPanels} />;
+
+// const inputOutputContent = <Accordion fluid styled panels={null} />;
+const inputOutputContent = (
+	<Header block as='h3' textAlign='center' content='⏰ COMING SOON ⏰' />
+);
+
+const branchingPanels = [
+	{
+		key: 'assignmentOperators',
+		title: 'Assignment Operators',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
+					lessonDefinition={assignmentOperatorsDefinition}
+					codeSnippet={assignmentOperatorsCodeSnippet}
+				/>
+			),
+		},
+	},
+
 	{
 		key: 'ifStatements',
 		title: 'IF Statements',
@@ -355,6 +318,17 @@ const panels = [
 			),
 		},
 	},
+];
+
+const branchingContent = <Accordion fluid styled panels={branchingPanels} />;
+
+// const loopPanels = [];
+// const loopContent = <Accordion fluid styled panels={loopPanels} />;
+const loopContent = (
+	<Header block as='h3' textAlign='center' content='⏰ COMING SOON ⏰' />
+);
+
+const functionPanels = [
 	{
 		key: 'functionDeclaration',
 		title: 'Function Declaration',
@@ -394,7 +368,50 @@ const panels = [
 			),
 		},
 	},
+];
 
+const functionContent = <Accordion fluid styled panels={functionPanels} />;
+
+const groupDataPanels = [
+	{
+		key: 'arrays',
+		title: 'Arrays',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148251584324209966`}
+					lessonDefinition={arraysDefinition}
+					codeSnippet={arraysCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: 'objects',
+		title: 'Objects',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148271817965178154`}
+					lessonDefinition={objectsDefinition}
+					codeSnippet={objectsCodeSnippet}
+				/>
+			),
+		},
+	},
+	{
+		key: 'updatingObjects',
+		title: 'Updating Objects',
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148623993590009134`}
+					lessonDefinition={null}
+					codeSnippet={updatingObjectsCodeSnippet}
+				/>
+			),
+		},
+	},
 	{
 		key: 'methods',
 		title: 'Methods',
@@ -474,5 +491,44 @@ const panels = [
 		},
 	},
 ];
+const groupDataContent = <Accordion fluid styled panels={groupDataPanels} />;
 
-export default panels;
+const rootPanels = [
+	{
+		key: '1',
+		title: 'Variables',
+		content: { content: variableContent },
+	},
+	{
+		key: '2',
+		title: 'Operations',
+		content: { content: operationContent },
+	},
+	{
+		key: '3',
+		title: 'Input/Output',
+		content: { content: inputOutputContent },
+	},
+	{
+		key: '4',
+		title: 'Branching',
+		content: { content: branchingContent },
+	},
+	{
+		key: '5',
+		title: 'Loops',
+		content: { content: loopContent },
+	},
+	{
+		key: '6',
+		title: 'Functions',
+		content: { content: functionContent },
+	},
+	{
+		key: '7',
+		title: 'Group Data',
+		content: { content: groupDataContent },
+	},
+];
+
+export default rootPanels;

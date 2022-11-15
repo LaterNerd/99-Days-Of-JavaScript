@@ -1,7 +1,7 @@
 import 'semantic-ui-css/semantic.min.css';
 import { Accordion, Container, Header, Segment } from 'semantic-ui-react';
 import './App.css';
-import panels from './panels';
+import rootPanels from './panels';
 
 function App() {
 	return (
@@ -31,7 +31,7 @@ function App() {
 			</Segment>
 
 			<Segment raised>
-				<Accordion fluid styled panels={panels} />
+				<Accordion fluid styled defaultActiveIndex={0} panels={rootPanels} />
 			</Segment>
 		</Container>
 	);
