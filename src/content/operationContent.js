@@ -2,96 +2,182 @@ import { PanelInfo } from '../panelInfo';
 import { Accordion } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
-	arithmeticOperatorsDefinition,
-	assignmentOperatorsDefinition,
-	incrementDecrementDefinition,
-	operatorPrecedenceDefinition,
+	assignmentOperatorDefinition,
+	expressionDefinition,
 	comparisonOperatorsDefinition,
 } from '../definitions/operationDefinitions';
 import {
-	arithmeticOperatorsCodeSnippet,
-	assignmentOperatorsCodeSnippet,
-	incrementDecrementCodeSnippet,
-	operatorPrecedenceCodeSnippet,
-	comparisonOperatorsPartOneCodeSnippet,
-	comparisonOperatorsPartTwoCodeSnippet,
+	expressionCodeSnippet,
+	assignmentOperatorCodeSnippet,
+	comparisonOperatorsCodeSnippet,
 } from '../codeSnippets/operationCodeSnippets';
 
 const operationPanels = [
 	{
-		key: 'arithmeticOperators',
-		title: 'Arithmetic Operators',
+		key: 'expression',
+		title: "What's an expression?",
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151195266224262446`}
-					lessonDefinition={arithmeticOperatorsDefinition}
-					codeSnippet={arithmeticOperatorsCodeSnippet}
+					embedLink={`${TIKTOK_EMBED_LINK}7167227849659747626`}
+					lessonDefinition={expressionDefinition}
+					codeSnippet={expressionCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: 'assignmentOperators',
-		title: 'Assignment Operators',
+		key: 'assignmentOperator',
+		title: "What's an assignment operator?",
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
-					lessonDefinition={assignmentOperatorsDefinition}
-					codeSnippet={assignmentOperatorsCodeSnippet}
+					embedLink={null}
+					lessonDefinition={assignmentOperatorDefinition}
+					codeSnippet={assignmentOperatorCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: 'incrementDecrement',
-		title: 'Increment + Decrement',
+		key: 'comparisonOperators',
+		title: "What's a comparison operator?",
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151235536026406190`}
-					lessonDefinition={incrementDecrementDefinition}
-					codeSnippet={incrementDecrementCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'operatorPrecedence',
-		title: 'Operator Precedence',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151209648559836458`}
-					lessonDefinition={operatorPrecedenceDefinition}
-					codeSnippet={operatorPrecedenceCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'comparisonOperatorsPt1',
-		title: 'Comparison Operators Pt.1',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151472626358291758`}
+					embedLink={null}
 					lessonDefinition={comparisonOperatorsDefinition}
-					codeSnippet={comparisonOperatorsPartOneCodeSnippet}
+					codeSnippet={comparisonOperatorsCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: 'comparisonOperatorsPt2',
-		title: 'Comparison Operators Pt.2',
+		key: '',
+		title: '',
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7151490219278257454`}
-					lessonDefinition={comparisonOperatorsDefinition}
-					codeSnippet={comparisonOperatorsPartTwoCodeSnippet}
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: '',
+		title: '',
+		content: {
+			content: (
+				<PanelInfo
+					embedLink={null}
+					lessonDefinition={null}
+					codeSnippet={null}
 				/>
 			),
 		},

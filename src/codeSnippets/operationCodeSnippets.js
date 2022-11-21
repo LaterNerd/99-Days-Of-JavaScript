@@ -1,3 +1,44 @@
+export const expressionCodeSnippet = `
+// let variableName = expression;
+
+let luckyNumber = 7;
+let firstName = 'Mario'
+let tall = false;
+`;
+
+export const assignmentOperatorCodeSnippet = `
+// let variable = value;
+let password = 'abc123';
+let login = false;
+let zipCode = 90210;
+
+
+// variable = newValue;
+password = 'def456';
+login = true;
+zipCode = 60606;
+`;
+
+export const comparisonOperatorsCodeSnippet = `
+STRICT_EQUAL: // Are these two equal?
+'3' === 3 // => false
+
+STRICT_NOT_EQUAL: // Are these two not equal?
+'3' !== 3 // => true
+
+GREATER_THAN: // Is this number greater than this number?
+1 > 3 // => false
+
+GREATER_THAN_OR_EQUAL: // Is this number greater than or equal to this number?
+1 >= 3 // => false
+
+LESS_THAN: // Is this number less than this number?
+1 < 3 // => true
+
+LESS_THAN_OR_EQUAL: // Is this number less than or equal to this number?
+1 <= 3 // => true
+`;
+
 export const arithmeticOperatorsCodeSnippet = `
 // Addition: +
 let equalsSeven = 3 + 4;
@@ -19,23 +60,6 @@ let equalsFive = 25 / 5;
 let equalsOne = 10 % 3;
 let equalsZero = 25 % 5;
 let equalsThree = 11 % 4;
-`;
-
-export const assignmentOperatorsCodeSnippet = `
-// Addition
-let add = 3;
-add = add + 4; // 7
-					
-// Addition alternative
-add += 4; // 7
-					
-					
-// Subtraction
-let subtract = 3;
-subtract = subtract - 2; // 1
-					
-// Subtraction alternative
-subtract -= 2; // 1
 `;
 
 export const incrementDecrementCodeSnippet = `
@@ -61,44 +85,4 @@ export const operatorPrecedenceCodeSnippet = `
 // With Order Precedence
 (5 * 5) / (5 - 2); // equals 8.333
 25 / 3; // 8.333
-`;
-
-export const comparisonOperatorsPartOneCodeSnippet = `
-// strict equality: are both values the same?
-'elephant' === 'elephant'; // true
-true === false; // false
-'elephant' === 5; // false
-3 === 3; // true
-					
-					
-// strict non equality: both values are not the same
-'elephant' !== 'elephant'; // false
-true !== false; // true
-'elephant' !== 5; // true
-3 !== 3; // false
-`;
-
-export const comparisonOperatorsPartTwoCodeSnippet = `
-// less than: is the value on the left smaller than the right?
-5 < 8; // true
-5 < 3; // false
-5 < 5; // false
-					
-					
-// greater than: is the value on the left bigger than the right?
-5 > 8; // false
-5 > 3; // true
-5 > 5; // false
-					
-					
-// less than or equal to: is the value on the left smaller or equal to the value on the right?
-5 <= 8; // true
-5 <= 3; // false
-5 <= 5; // true
-					
-					
-// greater than or equal to: is the value on the left bigger or equal to the value on the right?
-5 >= 8; // false
-5 >= 3; // false
-5 >= 5; // true
 `;
