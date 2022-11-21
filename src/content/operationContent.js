@@ -2,20 +2,32 @@ import { PanelInfo } from '../panelInfo';
 import { Accordion } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
-	assignmentOperatorDefinition,
 	expressionDefinition,
+	assignmentOperatorDefinition,
 	comparisonOperatorsDefinition,
+	arithmeticOperatorsDefinition,
+	logicalAndDefinition,
+	logicalOrDefinition,
+	logicalNotDefinition,
+	stringOperatorDefinition,
+	conditionalTernaryOperatorDefinition,
 } from '../definitions/operationDefinitions';
 import {
 	expressionCodeSnippet,
 	assignmentOperatorCodeSnippet,
 	comparisonOperatorsCodeSnippet,
+	arithmeticOperatorsCodeSnippet,
+	logicalAndCodeSnippet,
+	logicalOrCodeSnippet,
+	logicalNotCodeSnippet,
+	stringOperatorCodeSnippet,
+	conditionalTernaryOperatorCodeSnippet,
 } from '../codeSnippets/operationCodeSnippets';
 
 const operationPanels = [
 	{
 		key: 'expression',
-		title: "What's an expression?",
+		title: 'Expression',
 		content: {
 			content: (
 				<PanelInfo
@@ -28,7 +40,7 @@ const operationPanels = [
 	},
 	{
 		key: 'assignmentOperator',
-		title: "What's an assignment operator?",
+		title: 'Assignment Operator',
 		content: {
 			content: (
 				<PanelInfo
@@ -41,7 +53,7 @@ const operationPanels = [
 	},
 	{
 		key: 'comparisonOperators',
-		title: "What's a comparison operator?",
+		title: 'Comparison Operators',
 		content: {
 			content: (
 				<PanelInfo
@@ -53,131 +65,79 @@ const operationPanels = [
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'arithmeticOperators',
+		title: 'Arithmetic Operators',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={arithmeticOperatorsDefinition}
+					codeSnippet={arithmeticOperatorsCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'logicalAnd',
+		title: 'Logical AND',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={logicalAndDefinition}
+					codeSnippet={logicalAndCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'logicalOr',
+		title: 'Logical OR',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={logicalOrDefinition}
+					codeSnippet={logicalOrCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'logicalNot',
+		title: 'Logical NOT',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={logicalNotDefinition}
+					codeSnippet={logicalNotCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'stringOperator',
+		title: 'String Operator',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={stringOperatorDefinition}
+					codeSnippet={stringOperatorCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: '',
-		title: '',
+		key: 'conditionalTernaryOperator',
+		title: 'Conditional (Ternary) Operator',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
-				/>
-			),
-		},
-	},
-	{
-		key: '',
-		title: '',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
-				/>
-			),
-		},
-	},
-	{
-		key: '',
-		title: '',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
-				/>
-			),
-		},
-	},
-	{
-		key: '',
-		title: '',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
-				/>
-			),
-		},
-	},
-	{
-		key: '',
-		title: '',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={null}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={conditionalTernaryOperatorDefinition}
+					codeSnippet={conditionalTernaryOperatorCodeSnippet}
 				/>
 			),
 		},

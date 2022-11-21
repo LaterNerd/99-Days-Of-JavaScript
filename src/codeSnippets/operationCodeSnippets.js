@@ -40,49 +40,73 @@ LESS_THAN_OR_EQUAL: // Is this number less than or equal to this number?
 `;
 
 export const arithmeticOperatorsCodeSnippet = `
-// Addition: +
-let equalsSeven = 3 + 4;
-					
-					
-// Subtraction: -
-let equalsTwo = 10 - 8;
-					
-					
-// Multiplication: *
-let equalsSix = 3 * 2;
-					
-					
-// Division: /
-let equalsFive = 25 / 5;
-					
-					
-// Remainder/Modulo: %
-let equalsOne = 10 % 3;
-let equalsZero = 25 % 5;
-let equalsThree = 11 % 4;
+ADD: (+) // Add two numbers
+1 + 3 // => 4
+
+SUBTRACT: (-) // Subtract two numbers
+10 - 3 // => 7
+
+MULTIPLY: (*) // Multiply two numbers
+3 * 3 // => 9
+
+DIVIDE: (/) // Divide two numbers
+9 / 3 // => 3
+
+MODULO: (%) // How many times does the number on the right go into the number on the left? Return the remainder
+10 % 3 // => 1
 `;
 
-export const incrementDecrementCodeSnippet = `
-// increment
-let addOne = 0;
-addOne++; // 1
-addOne++; // 2
-addOne++; // 3
-					
-					
-// decrement
-let subtractOne = 3;
-subtractOne--; // 2
-subtractOne--; // 1
-subtractOne--; // 0
+export const logicalAndCodeSnippet = `
+LOGICAL_AND: (&&)
+// if this is true and this is true
+// return true
+
+true && true // => true
+
+true && false // => false
+
+false && false // => false
+
+false && true // => false
 `;
 
-export const operatorPrecedenceCodeSnippet = `
-// Without Order Precedence
-(5 * 5) / 5 - 2; // equals 3
-					
-					
-// With Order Precedence
-(5 * 5) / (5 - 2); // equals 8.333
-25 / 3; // 8.333
+export const logicalOrCodeSnippet = `
+LOGICAL_OR: (||)
+// if this is true or this is true
+// return true
+
+true || true // => true
+
+true || false // => true
+
+false || false // => false
+
+false || true // => true
+`;
+
+export const logicalNotCodeSnippet = `
+LOGICAL_NOT: (!)
+// flip the boolean value.
+
+!true // => false
+
+!false // => true
+`;
+
+export const stringOperatorCodeSnippet = `
+// string + string => single string
+
+'Hi' + ' 👋' // => 'Hi 👋'
+
+'I Love' + ' You ❤️' // => 'I Love You ❤️'
+
+'Good' + ' Morning!' // => 'Good Morning!'
+`;
+
+export const conditionalTernaryOperatorCodeSnippet = `
+// expression ? 'do this if true' : 'do this if false'
+
+(1 < 3) ? true : false // => true
+
+(1 > 3) ? true : false // => false
 `;

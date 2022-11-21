@@ -46,22 +46,70 @@ So use this when you need to compare if something's true or false.
 `;
 
 export const arithmeticOperatorsDefinition = `
-Use this to get the value of two or more numbers.
+It's how your code does math.
 
-**5 common types**:
-* Addition
-* Subtraction
-* Multiplication
-* Division
-* Remainder/Modulo
+And it uses all the same rules and symbols.
+
+You can use it with either variables or literal numbers.
+
+So use this if you need to do some math.
+
+#### 5 common types:
+* Addition: +
+* Subtraction: -
+* Multiplication: *
+* Division: /
+* Remainder/Modulo: %
 `;
 
-export const incrementDecrementDefinition = `
-A quick way to add or subtract a number by one.
+export const logicalAndDefinition = `
+It's the double ampersand symbol **(&&)**
+
+And it's used to test if two expressions are true.
+
+If both expressions pass, it'll return true.
+
+Otherwise, it'll return false.
+
+So when you need to test if two values are true, use this.
 `;
 
-export const operatorPrecedenceDefinition = `
-Tells your code what math to do first.
+export const logicalOrDefinition = `
+It's the double pipe symbol **(||)**
 
-To do this, put whatever math you need to do first in parenthesis.
+And it's used to test two expressions.
+
+If either expression is true, it'll return true.
+
+Otherwise, it'll return false.
+
+So when you need to test if any one of two expressions is true, use this.
+`;
+
+export const logicalNotDefinition = `
+It's the exclamation point **(!)**
+
+And it's used to flip the boolean value of an expression.
+
+So whenever you wanna get the opposite boolean value of an expression, use this.
+`;
+
+export const stringOperatorDefinition = `
+It's the plus sign **(+)**
+
+And it's used to join two strings and give you back a single string.
+
+So use this whenever you wanna join two or more strings.
+`;
+
+export const conditionalTernaryOperatorDefinition = `
+It's used to test an expression.
+
+And gives a different result depending on if the answer is true or false.
+
+If the answer's true, it'll return the first value.
+
+And, if it's false, it'll return the second.
+
+So use this when you have different values for different results.
 `;
