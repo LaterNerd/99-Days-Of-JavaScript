@@ -24,7 +24,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151195266224262446`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151195266224262446`}
 					lessonDefinition={arithmeticOperatorsDefinition}
 					codeSnippet={arithmeticOperatorsCodeSnippet}
 				/>
@@ -37,7 +37,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151265482761407786`}
 					lessonDefinition={assignmentOperatorsDefinition}
 					codeSnippet={assignmentOperatorsCodeSnippet}
 				/>
@@ -50,7 +50,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151235536026406190`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151235536026406190`}
 					lessonDefinition={incrementDecrementDefinition}
 					codeSnippet={incrementDecrementCodeSnippet}
 				/>
@@ -63,7 +63,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151209648559836458`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151209648559836458`}
 					lessonDefinition={operatorPrecedenceDefinition}
 					codeSnippet={operatorPrecedenceCodeSnippet}
 				/>
@@ -76,7 +76,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151472626358291758`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151472626358291758`}
 					lessonDefinition={comparisonOperatorsDefinition}
 					codeSnippet={comparisonOperatorsPartOneCodeSnippet}
 				/>
@@ -89,7 +89,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7151490219278257454`}
+					embedLink={`${TIKTOK_EMBED_LINK}7151490219278257454`}
 					lessonDefinition={comparisonOperatorsDefinition}
 					codeSnippet={comparisonOperatorsPartTwoCodeSnippet}
 				/>

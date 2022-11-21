@@ -15,7 +15,7 @@ const functionPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7154171722831367470`}
+					embedLink={`${TIKTOK_EMBED_LINK}7154171722831367470`}
 					lessonDefinition={functionDeclarationDefinition}
 					codeSnippet={functionDeclarationCodeSnippet}
 				/>
@@ -28,7 +28,7 @@ const functionPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7155639740581023019`}
+					embedLink={`${TIKTOK_EMBED_LINK}7155639740581023019`}
 					lessonDefinition={null}
 					codeSnippet={writingFunctionsCodeSnippet}
 				/>
@@ -41,7 +41,7 @@ const functionPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7155655036410891562`}
+					embedLink={`${TIKTOK_EMBED_LINK}7155655036410891562`}
 					lessonDefinition={null}
 					codeSnippet={callingFunctionsCodeSnippet}
 				/>

@@ -23,7 +23,7 @@ const branchingPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7153025707411541290`}
+					embedLink={`${TIKTOK_EMBED_LINK}7153025707411541290`}
 					lessonDefinition={ifStatementsDefinition}
 					codeSnippet={ifStatementsCodeSnippet}
 				/>
@@ -36,7 +36,7 @@ const branchingPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7153057077319994666`}
+					embedLink={`${TIKTOK_EMBED_LINK}7153057077319994666`}
 					lessonDefinition={ifElseStatementsDefinition}
 					codeSnippet={ifElseStatementsCodeSnippet}
 				/>
@@ -49,7 +49,7 @@ const branchingPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7153113451362110763`}
+					embedLink={`${TIKTOK_EMBED_LINK}7153113451362110763`}
 					lessonDefinition={elseIfStatementsDefinition}
 					codeSnippet={elseIfStatementsCodeSnippet}
 				/>
@@ -62,7 +62,7 @@ const branchingPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7153764533641776426`}
+					embedLink={`${TIKTOK_EMBED_LINK}7153764533641776426`}
 					lessonDefinition={logicalAndDefinition}
 					codeSnippet={logicalAndCodeSnippet}
 				/>
@@ -75,7 +75,7 @@ const branchingPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7153751879040781614`}
+					embedLink={`${TIKTOK_EMBED_LINK}7153751879040781614`}
 					lessonDefinition={logicalOrDefinition}
 					codeSnippet={logicalOrCodeSnippet}
 				/>

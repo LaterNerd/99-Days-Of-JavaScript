@@ -26,7 +26,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7147784853138935086`}
+					embedLink={`${TIKTOK_EMBED_LINK}7147784853138935086`}
 					lessonDefinition={null}
 					codeSnippet={null}
 				/>
@@ -39,7 +39,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7167216318289169707`}
+					embedLink={`${TIKTOK_EMBED_LINK}7167216318289169707`}
 					lessonDefinition={statementDefinition}
 					codeSnippet={null}
 				/>
@@ -52,7 +52,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164566076225998126`}
+					embedLink={`${TIKTOK_EMBED_LINK}7164566076225998126`}
 					lessonDefinition={variableDefinition}
 					codeSnippet={variablesCodeSnippet}
 				/>
@@ -65,7 +65,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164908710643502379`}
+					embedLink={`${TIKTOK_EMBED_LINK}7164908710643502379`}
 					lessonDefinition={variableNameDefinition}
 					codeSnippet={variableNameCodeSnippet}
 				/>
@@ -78,7 +78,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7165016641443564843`}
+					embedLink={`${TIKTOK_EMBED_LINK}7165016641443564843`}
 					lessonDefinition={primitivesDefinition}
 					codeSnippet={primitivesCodeSnippet}
 				/>
@@ -91,7 +91,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164955319293005099`}
+					embedLink={`${TIKTOK_EMBED_LINK}7164955319293005099`}
 					lessonDefinition={letDefinition}
 					codeSnippet={letCodeSnippet}
 				/>
@@ -104,7 +104,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7164962890405956910`}
+					embedLink={`${TIKTOK_EMBED_LINK}7164962890405956910`}
 					lessonDefinition={constDefinition}
 					codeSnippet={constCodeSnippet}
 				/>
@@ -117,7 +117,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7166048950410104106`}
+					embedLink={`${TIKTOK_EMBED_LINK}7166048950410104106`}
 					lessonDefinition={null}
 					codeSnippet={variableDeclarationCodeSnippet}
 				/>
@@ -130,7 +130,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148586546302766382`}
+					embedLink={`${TIKTOK_EMBED_LINK}7148586546302766382`}
 					lessonDefinition={null}
 					codeSnippet={updatingVariablesCodeSnippet}
 				/>
@@ -143,7 +143,7 @@ const variablePanels = [
 		content: {
 			content: (
 				<PanelInfo
-					videoEmbedLink={`${TIKTOK_EMBED_LINK}7148925986434731306`}
+					embedLink={`${TIKTOK_EMBED_LINK}7148925986434731306`}
 					lessonDefinition={null}
 					codeSnippet={null}
 				/>

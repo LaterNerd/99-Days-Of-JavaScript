@@ -4,14 +4,19 @@ import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import ReactMarkdown from 'react-markdown';
 
 export const PanelInfo = ({
-	videoEmbedLink,
+	embedLink,
 	definitionHeader,
 	lessonDefinition,
 	codeSnippet,
 }) => (
 	<div>
-		<Embed style={{ height: '750px' }} active url={videoEmbedLink} />
-		<Divider hidden />
+		{embedLink ? (
+			<>
+				<Embed style={{ height: '750px' }} active url={embedLink} />
+				<Divider hidden />
+			</>
+		) : null}
+
 		{lessonDefinition ? (
 			<>
 				<Header as={'h3'}>
@@ -21,11 +26,11 @@ export const PanelInfo = ({
 				<Divider hidden />
 			</>
 		) : null}
+
 		{codeSnippet ? (
 			<>
 				<Header as={'h3'}>How do you use it?</Header>
 				<SyntaxHighlighter
-					// wrapLongLines
 					children={codeSnippet}
 					showLineNumbers
 					language='javascript'
