@@ -2,6 +2,7 @@ import { PanelInfo } from '../panelInfo';
 import { Accordion, Header } from 'semantic-ui-react';
 import { TIKTOK_EMBED_LINK } from '../constants';
 import {
+	statementDefinition,
 	variableDefinition,
 	variableNameDefinition,
 	primitivesDefinition,
@@ -27,6 +28,19 @@ const variablePanels = [
 				<PanelInfo
 					videoEmbedLink={`${TIKTOK_EMBED_LINK}7147784853138935086`}
 					lessonDefinition={null}
+					codeSnippet={null}
+				/>
+			),
+		},
+	},
+	{
+		key: 'statement',
+		title: "What's a statement?",
+		content: {
+			content: (
+				<PanelInfo
+					videoEmbedLink={`${TIKTOK_EMBED_LINK}7167216318289169707`}
+					lessonDefinition={statementDefinition}
 					codeSnippet={null}
 				/>
 			),

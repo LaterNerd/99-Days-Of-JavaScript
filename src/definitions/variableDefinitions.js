@@ -16,6 +16,27 @@ and it keeps track of it for you.
 3. Then, show the variable the data it has to watch.
 `;
 
+export const statementDefinition = `
+If you want a computer to do something,
+you need to give it instructions to follow.
+
+So, for example, if you had to give your car 
+some instructions to follow, here's what you might say...
+
+1. Start
+2. Go forward
+3. Make a left
+
+And it'd follow all your instructions 
+until you told it to stop.
+
+So a statement is an instruction that 
+you give your code to follow.
+
+And one of the most basic instructions 
+you can give is to create a variable.
+`;
+
 export const variableNameDefinition = `
 Helpful tips for writing a great variable name.
 
