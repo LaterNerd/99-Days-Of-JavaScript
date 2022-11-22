@@ -8,15 +8,17 @@ import {
 	primitivesDefinition,
 	letDefinition,
 	constDefinition,
+	variableDeclarationDefinition,
+	commentsDefinition,
 } from '../definitions/variableDefinitions';
 import {
-	variablesCodeSnippet,
+	variableCodeSnippet,
 	variableNameCodeSnippet,
 	primitivesCodeSnippet,
 	letCodeSnippet,
 	constCodeSnippet,
 	variableDeclarationCodeSnippet,
-	updatingVariablesCodeSnippet,
+	commentsCodeSnippet,
 } from '../codeSnippets/variableCodeSnippets';
 
 const variablePanels = [
@@ -34,8 +36,8 @@ const variablePanels = [
 		},
 	},
 	{
-		key: 'statement',
-		title: "What's a statement?",
+		key: 'statements',
+		title: 'Statements',
 		content: {
 			content: (
 				<PanelInfo
@@ -48,20 +50,20 @@ const variablePanels = [
 	},
 	{
 		key: 'variables',
-		title: 'What are variables used for?',
+		title: 'Variables',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={`${TIKTOK_EMBED_LINK}7164566076225998126`}
 					lessonDefinition={variableDefinition}
-					codeSnippet={variablesCodeSnippet}
+					codeSnippet={variableCodeSnippet}
 				/>
 			),
 		},
 	},
 	{
-		key: 'nameVariable',
-		title: 'How to name a variable?',
+		key: 'variableNaming',
+		title: 'Variable Naming',
 		content: {
 			content: (
 				<PanelInfo
@@ -74,7 +76,7 @@ const variablePanels = [
 	},
 	{
 		key: 'primitiveDataTypes',
-		title: 'What are primitive data types?',
+		title: 'Primitive Data Types',
 		content: {
 			content: (
 				<PanelInfo
@@ -87,7 +89,7 @@ const variablePanels = [
 	},
 	{
 		key: 'let',
-		title: "What does 'let' mean?",
+		title: "'let' Keyword",
 		content: {
 			content: (
 				<PanelInfo
@@ -100,7 +102,7 @@ const variablePanels = [
 	},
 	{
 		key: 'const',
-		title: "What does 'const' mean?",
+		title: "'const' Keyword",
 		content: {
 			content: (
 				<PanelInfo
@@ -112,27 +114,14 @@ const variablePanels = [
 		},
 	},
 	{
-		key: 'declareVariable',
-		title: 'How do you declare a variable?',
+		key: 'variableDeclaration',
+		title: 'Variable Declaration',
 		content: {
 			content: (
 				<PanelInfo
 					embedLink={`${TIKTOK_EMBED_LINK}7166048950410104106`}
-					lessonDefinition={null}
+					lessonDefinition={variableDeclarationDefinition}
 					codeSnippet={variableDeclarationCodeSnippet}
-				/>
-			),
-		},
-	},
-	{
-		key: 'updatingVariables',
-		title: 'Updating Variables',
-		content: {
-			content: (
-				<PanelInfo
-					embedLink={`${TIKTOK_EMBED_LINK}7148586546302766382`}
-					lessonDefinition={null}
-					codeSnippet={updatingVariablesCodeSnippet}
 				/>
 			),
 		},
@@ -144,8 +133,8 @@ const variablePanels = [
 			content: (
 				<PanelInfo
 					embedLink={`${TIKTOK_EMBED_LINK}7148925986434731306`}
-					lessonDefinition={null}
-					codeSnippet={null}
+					lessonDefinition={commentsDefinition}
+					codeSnippet={commentsCodeSnippet}
 				/>
 			),
 		},

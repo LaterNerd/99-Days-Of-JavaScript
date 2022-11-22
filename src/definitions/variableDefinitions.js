@@ -1,21 +1,3 @@
-export const variableDefinition = `
-In code, we need to be able to keep
-track of data (text, numbers, true/false)
-
-And to do that, we use variables.
-
-A variable is like a tracker.
-
-You tell it what data to watch,
-and it keeps track of it for you.
-
-
-#### How do you use it?
-1. First, give the variable a name, so you remember what it's tracking.
-2. Next, tell the variable what type of data it's tracking.
-3. Then, show the variable the data it has to watch.
-`;
-
 export const statementDefinition = `
 If you want a computer to do something,
 you need to give it instructions to follow.
@@ -35,6 +17,24 @@ you give your code to follow.
 
 And one of the most basic instructions 
 you can give is to create a variable.
+`;
+
+export const variableDefinition = `
+In code, we need to be able to keep
+track of data (text, numbers, true/false)
+
+And to do that, we use variables.
+
+A variable is like a tracker.
+
+You tell it what data to watch,
+and it keeps track of it for you.
+
+
+#### How do you use it?
+1. First, give the variable a name, so you remember what it's tracking.
+2. Next, tell the variable what type of data it's tracking.
+3. Then, show the variable the data it has to watch.
 `;
 
 export const variableNameDefinition = `
@@ -86,4 +86,20 @@ export const constDefinition = `
 
 #### When should I use it?
 - If the value of the variable never changes, use 'const'.
+`;
+
+export const variableDeclarationDefinition = `
+It's how you create a new variable and set its value.
+
+You can use it with either the *'let'* or *'const'* keyword before the variable name.
+
+So use this when you need to create a new variable.
+`;
+
+export const commentsDefinition = `
+It's used for writing notes in your code.
+
+You can also use it to stop lines of code from working while testing.
+
+So use **(//)** before a line of code to write some notes or avoid a line of code from working.
 `;

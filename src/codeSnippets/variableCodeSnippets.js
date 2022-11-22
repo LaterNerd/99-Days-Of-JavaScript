@@ -1,4 +1,4 @@
-export const variablesCodeSnippet = `
+export const variableCodeSnippet = `
 // 1. create a variable called firstName
 // 2. that tracks a string
 // 3. with the value 'Mario.'
@@ -83,10 +83,18 @@ let age = 35;
 let verified = false;
 `;
 
-export const updatingVariablesCodeSnippet = `
-let temperature = 76;
+export const commentsCodeSnippet = `
+// ** this line of code is for notes **
 
-temperature = 74;
-temperature = 72;
-temperature = 67;
+
+// ** the code below this comment won't work **
+// ** because I used // before the code **
+
+// let age = 21;
+// let weight = 100;
+// let single = true;
+
+// const firstName = 'Mario';
+// const cool = true;
+// const funny = true;
 `;
