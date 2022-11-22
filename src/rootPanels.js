@@ -26,7 +26,7 @@ export const rootPanels = [
 	},
 	{
 		key: '4',
-		title: 'Branching',
+		title: 'Logic Flow',
 		content: { content: branchingContent },
 	},
 	{
