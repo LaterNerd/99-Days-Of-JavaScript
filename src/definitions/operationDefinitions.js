@@ -48,11 +48,13 @@ So use this when you need to compare if something's true or false.
 export const arithmeticOperatorsDefinition = `
 It's how your code does math.
 
-And it uses all the same rules and symbols.
+So you can use all the same rules and symbols.
 
-You can use it with either variables or literal numbers.
+But you can use more than numbers.
 
-So use this if you need to do some math.
+You can use variables too.
+
+So use this to solve problems like the price of something, quantity, or anything math-y.
 
 #### 5 common types:
 * Addition: +
