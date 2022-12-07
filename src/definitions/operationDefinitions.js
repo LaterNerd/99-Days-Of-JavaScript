@@ -65,15 +65,11 @@ So use this to solve problems like the price of something, quantity, or anything
 `;
 
 export const logicalAndDefinition = `
-It's the double ampersand symbol **(&&)**
+It's used to test if two expressions are true.
 
-And it's used to test if two expressions are true.
+So if one of the expressions is false, the whole thing's false.
 
-If both expressions pass, it'll return true.
-
-Otherwise, it'll return false.
-
-So when you need to test if two values are true, use this.
+So use this when two things need to be true for something to happen.
 `;
 
 export const logicalOrDefinition = `

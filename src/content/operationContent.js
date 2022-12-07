@@ -44,7 +44,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7168981611483073835`}
 					lessonDefinition={assignmentOperatorDefinition}
 					codeSnippet={assignmentOperatorCodeSnippet}
 				/>
@@ -57,7 +57,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7169018062912441643`}
 					lessonDefinition={comparisonOperatorsDefinition}
 					codeSnippet={comparisonOperatorsCodeSnippet}
 				/>
@@ -70,7 +70,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7169034748398964014`}
 					lessonDefinition={arithmeticOperatorsDefinition}
 					codeSnippet={arithmeticOperatorsCodeSnippet}
 				/>
@@ -83,7 +83,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7170141181081357610`}
 					lessonDefinition={logicalAndDefinition}
 					codeSnippet={logicalAndCodeSnippet}
 				/>
@@ -96,7 +96,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7171184622120897838`}
 					lessonDefinition={logicalOrDefinition}
 					codeSnippet={logicalOrCodeSnippet}
 				/>
@@ -109,7 +109,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7171204346737118507`}
 					lessonDefinition={logicalNotDefinition}
 					codeSnippet={logicalNotCodeSnippet}
 				/>
@@ -122,7 +122,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7171557859170290987`}
 					lessonDefinition={stringOperatorDefinition}
 					codeSnippet={stringOperatorCodeSnippet}
 				/>
@@ -135,7 +135,7 @@ const operationPanels = [
 		content: {
 			content: (
 				<PanelInfo
-					embedLink={null}
+					embedLink={`${TIKTOK_EMBED_LINK}7171636684172348715`}
 					lessonDefinition={conditionalTernaryOperatorDefinition}
 					codeSnippet={conditionalTernaryOperatorCodeSnippet}
 				/>
